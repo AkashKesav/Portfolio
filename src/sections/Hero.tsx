@@ -9,7 +9,7 @@ export default function Hero() {
 
   useGridEffect(canvasRef, { step: 24 });
 
-  const name = 'Akash Kesav';
+  const name = 'Akash Kesav Shanmugaraj';
   const nameChars = name.split('');
 
   useEffect(() => {

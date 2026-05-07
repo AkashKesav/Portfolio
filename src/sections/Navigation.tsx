@@ -48,7 +48,7 @@ export default function Navigation() {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
-            Akash Kesav
+            Akash Kesav Shanmugaraj
           </a>
 
           {/* Desktop nav */}

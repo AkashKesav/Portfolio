@@ -71,7 +71,7 @@ export default function Contact() {
 
         <div className="border-t border-[rgba(245,245,240,0.1)] pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-body text-[12px] text-[rgba(245,245,240,0.5)]">
-            © 2026 Akash Kesav
+            © 2026 Akash Kesav Shanmugaraj
           </p>
           <p className="font-body text-[12px] text-[rgba(245,245,240,0.5)]">
             Built with React & Tailwind
