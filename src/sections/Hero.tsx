@@ -43,7 +43,7 @@ export default function Hero() {
           Machine Learning Engineer
         </p>
 
-        <h1 className="font-heading font-bold text-[48px] md:text-[80px] text-[#1A1A1A] leading-[1.0] mb-6">
+        <h1 className="font-heading font-bold text-[48px] md:text-[72px] text-[#1A1A1A] leading-[1.1] mb-6 whitespace-nowrap">
           {nameChars.map((char, i) => (
             <span
               key={i}
