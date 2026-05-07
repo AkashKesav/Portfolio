@@ -34,65 +34,70 @@ export default function Hero() {
         style={{ zIndex: 0 }}
       />
 
-      <div className="relative z-10 text-center max-w-[800px] mx-auto px-6">
-        <p
-          className={`font-body font-medium text-[14px] text-[#6B7B3E] tracking-[0.1em] uppercase mb-6 transition-all duration-600 ${
-            contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-        >
-          Machine Learning Engineer
-        </p>
-
-        <h1 className="font-heading font-bold text-[48px] md:text-[72px] text-[#1A1A1A] leading-[1.1] mb-6 whitespace-nowrap">
-          {nameChars.map((char, i) => (
-            <span
-              key={i}
-              className={`char inline-block ${charsAnimated ? 'animate' : ''}`}
-              style={{
-                transitionDelay: charsAnimated ? `${i * 30}ms` : '0ms',
-              }}
-            >
-              {char === ' ' ? '\u00A0' : char}
-            </span>
-          ))}
-        </h1>
-
-        <p
-          className={`font-body text-[18px] text-[rgba(26,26,26,0.7)] leading-[1.6] max-w-[560px] mx-auto mb-8 transition-all duration-600 ${
-            contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-          style={{ transitionDelay: '200ms' }}
-        >
-          Smart Manufacturing undergrad at IIITDM Jabalpur. Building ML systems for materials, language, and production.
-        </p>
-
-        <div
-          className={`flex items-center justify-center gap-4 mb-6 transition-all duration-600 ${
-            contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-          style={{ transitionDelay: '400ms' }}
-        >
-          <button
-            onClick={() => handleScrollTo('#projects')}
-            className="bg-[#1A1A1A] text-[#F5F5F0] px-7 py-3 font-body font-medium text-[14px] hover:bg-[#6B7B3E] transition-colors duration-200 flex items-center gap-2"
+      <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+        <div className="text-center mb-6">
+          <p
+            className={`font-body font-medium text-[14px] text-[#6B7B3E] tracking-[0.1em] uppercase transition-all duration-600 ${
+              contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}
           >
-            View Projects
-            <ArrowRight size={16} />
-          </button>
-          <a
-            href="/AkashKesav_ML.pdf"
-            className="border-[1.5px] border-[#1A1A1A] text-[#1A1A1A] px-7 py-3 font-body font-medium text-[14px] hover:bg-[#1A1A1A] hover:text-[#F5F5F0] transition-all duration-200"
-          >
-            Download Resume
-          </a>
+            Machine Learning Engineer
+          </p>
         </div>
 
-        <div
-          className={`flex items-center justify-center gap-5 transition-all duration-600 ${
-            contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-          style={{ transitionDelay: '500ms' }}
-        >
+        <div className="text-left">
+          <h1 className="font-heading font-bold text-[48px] md:text-[72px] text-[#1A1A1A] leading-[1.1] mb-6">
+            {nameChars.map((char, i) => (
+              <span
+                key={i}
+                className={`char inline-block ${charsAnimated ? 'animate' : ''}`}
+                style={{
+                  transitionDelay: charsAnimated ? `${i * 30}ms` : '0ms',
+                }}
+              >
+                {char === ' ' ? '\u00A0' : char}
+              </span>
+            ))}
+          </h1>
+        </div>
+
+        <div className="text-center">
+          <p
+            className={`font-body text-[18px] text-[rgba(26,26,26,0.7)] leading-[1.6] max-w-[560px] mx-auto mb-8 transition-all duration-600 ${
+              contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}
+            style={{ transitionDelay: '200ms' }}
+          >
+            Smart Manufacturing undergrad at IIITDM Jabalpur. Building ML systems for materials, language, and production.
+          </p>
+
+          <div
+            className={`flex items-center justify-center gap-4 mb-6 transition-all duration-600 ${
+              contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}
+            style={{ transitionDelay: '400ms' }}
+          >
+            <button
+              onClick={() => handleScrollTo('#projects')}
+              className="bg-[#1A1A1A] text-[#F5F5F0] px-7 py-3 font-body font-medium text-[14px] hover:bg-[#6B7B3E] transition-colors duration-200 flex items-center gap-2"
+            >
+              View Projects
+              <ArrowRight size={16} />
+            </button>
+            <a
+              href="/AkashKesav_ML.pdf"
+              className="border-[1.5px] border-[#1A1A1A] text-[#1A1A1A] px-7 py-3 font-body font-medium text-[14px] hover:bg-[#1A1A1A] hover:text-[#F5F5F0] transition-all duration-200"
+            >
+              Download Resume
+            </a>
+          </div>
+
+          <div
+            className={`flex items-center justify-center gap-5 transition-all duration-600 ${
+              contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}
+            style={{ transitionDelay: '500ms' }}
+          >
           <a
             href="https://github.com/AkashKesav"
             target="_blank"
@@ -118,6 +123,7 @@ export default function Hero() {
           >
             <Mail size={20} />
           </a>
+          </div>
         </div>
       </div>
     </section>
