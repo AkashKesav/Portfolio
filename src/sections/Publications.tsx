@@ -6,28 +6,44 @@ export default function Publications() {
           data-animate="fade-up"
           className="font-body font-medium text-[12px] text-[#6B7B3E] tracking-[0.08em] uppercase mb-12"
         >
-          05 — Publications & Patents
+          05 — Publications & Conferences
         </p>
 
-        <div data-animate="fade-up" className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
-          <div className="flex-1">
+        <div data-animate="fade-up" className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <div>
             <h3 className="font-body font-medium text-[16px] text-[#1A1A1A] mb-1">
-              Materials Today Conference (Elsevier, 2025)
+              Materials Today Conference 2025
             </h3>
-            <p className="font-body text-[14px] text-[rgba(26,26,26,0.5)]">
-              Contributed to accepted abstract on ML-based material property prediction.
+            <p className="font-body text-[14px] text-[rgba(26,26,26,0.5)] mb-2">
+              Accepted poster abstract (Ref. 587) on ML-based material property prediction.
             </p>
+            <span className="font-body text-[12px] text-[#6B7B3E] tracking-[0.02em]">
+              23–26 June 2025 · Sitges, Spain
+            </span>
           </div>
 
-          <div className="hidden md:block w-[1px] h-[60px] bg-[rgba(26,26,26,0.1)]" />
+          <div>
+            <h3 className="font-body font-medium text-[16px] text-[#1A1A1A] mb-1">
+              SECUF-2026 — Invited Talk
+            </h3>
+            <p className="font-body text-[14px] text-[rgba(26,26,26,0.5)] mb-2">
+              "Inverse design of magneto-excitonic semiconductors" — co-author.
+            </p>
+            <span className="font-body text-[12px] text-[#6B7B3E] tracking-[0.02em]">
+              5th Conf. on Physics under Synergetic Extreme Conditions
+            </span>
+          </div>
 
-          <div className="flex-1">
+          <div>
             <h3 className="font-body font-medium text-[16px] text-[#1A1A1A] mb-1">
               Patent Application
             </h3>
-            <p className="font-body text-[14px] text-[rgba(26,26,26,0.5)]">
-              Co-filed 1 patent application from academic project work (under review).
+            <p className="font-body text-[14px] text-[rgba(26,26,26,0.5)] mb-2">
+              Co-filed 1 patent application from academic project work.
             </p>
+            <span className="font-body text-[12px] text-[#6B7B3E] tracking-[0.02em]">
+              Under review
+            </span>
           </div>
         </div>
       </div>
