@@ -2,49 +2,42 @@ import { ArrowRight, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'MatterGen Python Module',
-    date: 'Mar 2026',
-    body: 'Developed and published to PyPI a Python wrapper for Microsoft\'s MatterGen diffusion model for materials design. Implemented APIs for model loading and property-conditioned generation (e.g., band gap, bulk modulus) to produce candidate materials for downstream screening.',
-    tags: ['Python', 'PyPI', 'Diffusion Models'],
-    link: 'https://github.com/AkashKesav/Mattergen_Module_unofficial',
+    title: 'Reflective Memory Kernel',
+    date: 'Dec 2025 – Feb 2026',
+    body: 'Built a persistent agent-memory layer on Dgraph with activation decay and reinforcement for retrieval. A reflection pipeline synthesizes observations, identifies contradictions, and prioritizes relevant context across multi-step AI workflows.',
+    tags: ['Knowledge Graphs', 'Agentic AI', 'Dgraph', 'Go / Python'],
+    link: 'https://github.com/AkashKesav/Whitepaper',
   },
   {
-    title: 'Thermoelectric Material Property Prediction',
-    date: 'Jan 2025 – May 2025',
-    body: 'Benchmarked 7 ML algorithms (XGBoost, Random Forest, ResNet, FFNN, ensembles) on 7,239 thermoelectric materials. Showed chemical descriptors outperform physical ones by 25% in R², yielding a feature-engineering heuristic for screening.',
-    tags: ['XGBoost', 'Random Forest', 'ResNet', 'Feature Engineering'],
-    link: 'https://github.com/AkashKesav/TE_ML',
-  },
-  {
-    title: 'NLP Classifiers',
+    title: 'Multilingual Classification and Sentence Entailment',
     date: 'Jul 2024 – Aug 2024',
     body: 'Fine-tuned BERT and XLM-RoBERTa, achieving 98% accuracy on multilingual detection across 20+ languages. Built a 3-class entailment classifier reaching 78% F1-score; recovered minority-class recall by 12 points using weighted loss.',
-    tags: ['Hugging Face', 'BERT', 'NLP'],
+    tags: ['Hugging Face', 'BERT', 'XLM-RoBERTa', 'NLP'],
     links: [
       { label: 'Language Detection', url: 'https://github.com/AkashKesav/Language_Detection_Classifier' },
       { label: 'Sentence Entailment', url: 'https://github.com/AkashKesav/SentenceClassifier' },
     ],
   },
   {
-    title: 'DFT AI Agent',
-    date: '2025',
-    body: 'AI agent automating DFT simulation workflows — checks results, reruns on failure, reduces professional friction in materials simulation pipelines.',
-    tags: ['Python', 'LangChain', 'Automation'],
+    title: 'Autonomous DFT Workflow Agent',
+    date: '2026',
+    body: 'Built a LangGraph agent for adaptive GPAW/VASP runs and automated band-structure and density-of-states analysis using ASE and spglib.',
+    tags: ['LangGraph', 'DFT', 'ASE', 'Scientific Automation'],
     link: 'https://github.com/AkashKesav/DFT_AI',
   },
   {
-    title: 'Frontend Builder',
-    date: '2025',
-    body: 'Visual app builder with AI-powered design assistance and real-time collaboration capabilities.',
-    tags: ['TypeScript', 'AI', 'Visual Builder'],
-    link: 'https://github.com/AkashKesav/Frontend_Builder',
+    title: 'MatterGen Python Module',
+    date: 'Mar 2026',
+    body: 'Published an unofficial Python wrapper for Microsoft\'s MatterGen model, adding APIs for model loading and property-conditioned generation to support candidate-material screening workflows.',
+    tags: ['Python', 'PyPI', 'Generative Models', 'Materials'],
+    link: 'https://github.com/AkashKesav/Mattergen_Module_unofficial',
   },
   {
-    title: 'MockForm',
-    date: '2024',
-    body: 'Form building platform with Go backend and JavaScript frontend. Full-stack web application for creating and managing dynamic forms.',
-    tags: ['Go', 'TypeScript', 'Full-Stack'],
-    link: 'https://github.com/AkashKesav/MockForm',
+    title: 'Thermoelectric Material Property Prediction',
+    date: 'Jan 2025 – May 2025',
+    body: 'Benchmarked seven ML algorithms on 7,239 thermoelectric materials and found that chemical descriptors outperformed physical descriptors across the evaluated models, informing feature selection for material screening.',
+    tags: ['XGBoost', 'Random Forest', 'PyTorch', 'Feature Engineering'],
+    link: 'https://github.com/AkashKesav/TE_ML',
   },
 ];
 
@@ -56,7 +49,7 @@ export default function Projects() {
           data-animate="fade-up"
           className="font-body font-medium text-[12px] text-[#6B7B3E] tracking-[0.08em] uppercase mb-12"
         >
-          04 — Projects
+          05 — Selected Projects
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

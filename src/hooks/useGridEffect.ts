@@ -20,7 +20,7 @@ export function useGridEffect(canvasRef: React.RefObject<HTMLCanvasElement | nul
 
     const step = options.step ?? 24;
     let phase = 0;
-    let t = 0;
+    const t = 0;
 
     let width = canvas.offsetWidth;
     let height = canvas.offsetHeight;
@@ -121,8 +121,8 @@ export function useGridEffect(canvasRef: React.RefObject<HTMLCanvasElement | nul
     const resizeObserver = new ResizeObserver((entries) => {
       for (const entry of entries) {
         const rect = entry.contentRect;
-        let newWidth = Math.floor(rect.width / 2) * 2;
-        let newHeight = Math.floor(rect.height / 2) * 2;
+        const newWidth = Math.floor(rect.width / 2) * 2;
+        const newHeight = Math.floor(rect.height / 2) * 2;
         if (newWidth !== width || newHeight !== height) {
           width = newWidth;
           height = newHeight;
@@ -171,5 +171,5 @@ export function useGridEffect(canvasRef: React.RefObject<HTMLCanvasElement | nul
       resizeObserver.disconnect();
       intersectionObserver.disconnect();
     };
-  }, [options.step]);
+  }, [canvasRef, options.step]);
 }

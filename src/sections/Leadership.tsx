@@ -6,7 +6,7 @@ export default function Leadership() {
           data-animate="fade-up"
           className="font-body font-medium text-[12px] text-[#6B7B3E] tracking-[0.08em] uppercase mb-12"
         >
-          07 — Leadership
+          08 — Leadership
         </p>
 
         <div data-animate="fade-up" className="max-w-[800px]">

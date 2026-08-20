@@ -22,7 +22,7 @@ export default function Summary() {
               className="font-body text-[18px] text-[#1A1A1A] leading-[1.7] mb-8"
               style={{ transitionDelay: '200ms' }}
             >
-              Machine-learning-focused Smart Manufacturing undergraduate at IIITDM Jabalpur (CGPA 7.7/10) with hands-on experience building and evaluating ML systems. Ran 12+ model experiments, achieving up to 98% accuracy on NLP classification and 83% accuracy on semiconductor band-gap prediction. Built LangChain/LangGraph agent systems, shipped a MatterGen package on PyPI, and contributed to an accepted abstract at Materials Today Conference (Elsevier, 2025).
+              Fourth-year Smart Manufacturing undergraduate at IIITDM Jabalpur focused on applied machine learning for materials science, with experience in distributed ML systems. My current work spans physics-informed inverse design, trust-minimized training, and semiconductor generative modelling. I am seeking laboratory research experience while preparing for PhD study in trustworthy and scientifically useful AI.
             </p>
 
             <div
@@ -32,7 +32,7 @@ export default function Summary() {
             >
               <span className="w-2 h-2 rounded-full bg-[#6B7B3E] animate-pulse-slow" />
               <span className="font-body font-medium text-[13px] text-[#6B7B3E]">
-                Available for internship: May 2026 – Dec 2026
+                Open to research internships and collaborations
               </span>
             </div>
           </div>

@@ -8,7 +8,7 @@ export default function Contact() {
           data-animate="fade-up"
           className="font-heading font-bold text-[32px] md:text-[48px] text-[#F5F5F0] mb-4"
         >
-          Let's build something.
+          Let&apos;s investigate what reliable ML can do.
         </h2>
 
         <p
@@ -16,7 +16,7 @@ export default function Contact() {
           className="font-body text-[16px] text-[rgba(245,245,240,0.7)] max-w-[480px] mx-auto mb-10"
           style={{ transitionDelay: '100ms' }}
         >
-          I'm available for internships May 2026 – Dec 2026. Open to ML, backend, and research roles.
+          I&apos;m open to research internships and collaborations in applied ML, trustworthy AI, agentic systems, and AI for science.
         </p>
 
         <div
@@ -32,11 +32,11 @@ export default function Contact() {
             akashkesav3@gmail.com
           </a>
           <a
-            href="tel:+918220473193"
+            href="tel:+6586246231"
             className="flex items-center gap-2 font-body font-medium text-[16px] text-[#F5F5F0] hover:underline transition-all duration-200"
           >
             <Phone size={18} />
-            +91-8220473193
+            +65 8624 6231
           </a>
           <span className="flex items-center gap-2 font-body font-medium text-[16px] text-[#F5F5F0]">
             <MapPin size={18} />

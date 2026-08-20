@@ -4,6 +4,7 @@ import Navigation from '@/sections/Navigation';
 import Hero from '@/sections/Hero';
 import Summary from '@/sections/Summary';
 import Education from '@/sections/Education';
+import Research from '@/sections/Research';
 import Experience from '@/sections/Experience';
 import Projects from '@/sections/Projects';
 import Publications from '@/sections/Publications';
@@ -40,6 +41,7 @@ export default function App() {
         <Hero />
         <Summary />
         <Education />
+        <Research />
         <Experience />
         <Projects />
         <Publications />

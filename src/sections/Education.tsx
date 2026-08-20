@@ -25,11 +25,11 @@ export default function Education() {
             </p>
             <div className="flex items-center gap-4 mb-2">
               <span className="inline-block border border-[#1A1A1A] px-3 py-1 rounded text-[14px] font-body font-medium text-[#1A1A1A]">
-                CGPA: 7.7 / 10
+                CGPA: 7.9 / 10
               </span>
             </div>
             <p className="font-body text-[14px] text-[rgba(26,26,26,0.5)]">
-              Expected May 2027
+              Expected June 2027
             </p>
           </div>
         </div>

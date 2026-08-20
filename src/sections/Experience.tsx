@@ -7,8 +7,7 @@ export default function Experience() {
       date: 'Jun 2025 – Nov 2025',
       location: 'Chennai, Tamil Nadu',
       bullets: [
-        'Architected multi-agent AI systems using 2 orchestration frameworks (LangChain, LangGraph), automating triage, assignment, and status tracking while reducing manual coordination overhead for internal operations teams.',
-        'Built backend services for a node-based workflow editor, enabling teams to configure executable multi-step inference and data-processing pipelines.',
+        'Architected multi-agent AI systems with LangChain and LangGraph for triage, assignment, and status tracking, reducing manual coordination overhead for internal operations teams.',
         'Integrated a 4-system stack (PostgreSQL, MongoDB, Redis, NATS) for asynchronous stateful execution across internal workflow endpoints; containerized services with Docker for reproducible deployments.',
       ],
     },
@@ -21,7 +20,6 @@ export default function Experience() {
       bullets: [
         'Benchmarked 5 ML architectures (GNNs, XGBoost, Random Forest, DNNs) on semiconductor band-gap prediction, achieving 83% accuracy.',
         'Designed an automated data-collection and preprocessing pipeline ingesting 1,600+ material records from the Materials Project API across all 118 elements.',
-        'Evaluated model performance using MSE, MAE, and R² to compare architectures and select robust baselines.',
         'Contributed to research abstract accepted at Materials Today Conference (Elsevier, 2025).',
       ],
     },
@@ -34,7 +32,7 @@ export default function Experience() {
           data-animate="fade-up"
           className="font-body font-medium text-[12px] text-[#6B7B3E] tracking-[0.08em] uppercase mb-12"
         >
-          03 — Experience
+          04 — Experience
         </p>
 
         <div className="flex flex-col gap-8">

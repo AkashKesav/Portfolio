@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 
 const NAV_LINKS = [
-  { label: 'Summary', href: '#summary' },
+  { label: 'Research', href: '#research' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Skills', href: '#skills' },
+  { label: 'Publications', href: '#publications' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -42,7 +42,7 @@ export default function Navigation() {
         <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
           <a
             href="#"
-            className="font-body font-semibold text-[16px] text-[#1A1A1A] hover:text-[#6B7B3E] transition-colors duration-200"
+            className="font-body font-semibold text-[14px] sm:text-[16px] text-[#1A1A1A] hover:text-[#6B7B3E] transition-colors duration-200"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -94,7 +94,7 @@ export default function Navigation() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden text-[#1A1A1A]"
+            className="md:hidden flex h-10 w-10 shrink-0 items-center justify-center text-[#1A1A1A]"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >

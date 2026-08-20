@@ -5,15 +5,16 @@ const languagesFrameworks = [
 ];
 
 const coreML = [
-  'Deep Learning', 'GNNs', 'NLP', 'Transformers', 'Feature Engineering',
-  'Model Evaluation', 'Cross-Validation',
+  'Deep Learning', 'GNNs', 'NLP', 'Transformers', 'RAG', 'Agentic AI',
+  'Physics-Informed Learning', 'PINNs', 'Inverse Design', 'Model Evaluation',
 ];
 
 const mlopsBackend = [
-  'Docker', 'GCP', 'REST APIs', 'Go Fiber', 'NATS', 'Git', 'Linux', 'CI/CD',
+  'Data & Model Parallelism', 'Docker', 'REST APIs', 'Go Fiber', 'NATS',
+  'Git', 'Linux', 'CI/CD',
 ];
 
-const databases = ['PostgreSQL', 'MongoDB', 'Redis'];
+const databases = ['PostgreSQL', 'MongoDB', 'Redis', 'Dgraph'];
 
 export default function Skills() {
   return (
@@ -23,7 +24,7 @@ export default function Skills() {
           data-animate="fade-up"
           className="font-body font-medium text-[12px] text-[#6B7B3E] tracking-[0.08em] uppercase mb-12"
         >
-          06 — Technical Skills
+          07 — Technical Skills
         </p>
 
         {/* Languages & Frameworks */}
@@ -64,7 +65,7 @@ export default function Skills() {
 
           <div data-animate="fade-up" className="flex-1" style={{ transitionDelay: '200ms' }}>
             <h3 className="font-heading font-bold text-[18px] text-[#1A1A1A] mb-5">
-              MLOps & Backend
+              Systems & MLOps
             </h3>
             <ul className="space-y-2">
               {mlopsBackend.map((skill) => (
@@ -82,7 +83,7 @@ export default function Skills() {
         {/* Databases */}
         <div data-animate="fade-up" style={{ transitionDelay: '300ms' }}>
           <h3 className="font-heading font-bold text-[18px] text-[#1A1A1A] mb-5">
-            Databases
+            Data & Databases
           </h3>
           <div className="flex flex-wrap gap-2.5">
             {databases.map((skill) => (

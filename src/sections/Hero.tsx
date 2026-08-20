@@ -10,7 +10,7 @@ export default function Hero() {
   useGridEffect(canvasRef, { step: 24 });
 
   const name = 'Akash Kesav Shanmugaraj';
-  const nameChars = name.split('');
+  const nameWords = name.split(' ');
 
   useEffect(() => {
     const timer1 = setTimeout(() => setCharsAnimated(true), 400);
@@ -34,28 +34,37 @@ export default function Hero() {
         style={{ zIndex: 0 }}
       />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+      <div className="relative z-10 w-full min-w-0 max-w-[1200px] mx-auto px-6">
         <div className="text-center mb-6">
           <p
             className={`font-body font-medium text-[14px] text-[#6B7B3E] tracking-[0.1em] uppercase transition-all duration-600 ${
               contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
             }`}
           >
-            Machine Learning Engineer
+            Applied Machine Learning Researcher
           </p>
         </div>
 
-        <div className="text-left">
-          <h1 className="font-heading font-bold text-[48px] md:text-[72px] text-[#1A1A1A] leading-[1.1] mb-6">
-            {nameChars.map((char, i) => (
-              <span
-                key={i}
-                className={`char inline-block ${charsAnimated ? 'animate' : ''}`}
-                style={{
-                  transitionDelay: charsAnimated ? `${i * 30}ms` : '0ms',
-                }}
-              >
-                {char === ' ' ? '\u00A0' : char}
+        <div className="text-center">
+          <h1 className="font-heading font-bold text-[42px] sm:text-[52px] md:text-[64px] lg:text-[72px] text-[#1A1A1A] leading-[1.08] mb-6">
+            {nameWords.map((word, wordIndex) => (
+              <span key={word}>
+                <span className="inline-block whitespace-nowrap">
+                  {word.split('').map((char, charIndex) => (
+                    <span
+                      key={`${word}-${charIndex}`}
+                      className={`char inline-block ${charsAnimated ? 'animate' : ''}`}
+                      style={{
+                        transitionDelay: charsAnimated
+                          ? `${(wordIndex * 10 + charIndex) * 30}ms`
+                          : '0ms',
+                      }}
+                    >
+                      {char}
+                    </span>
+                  ))}
+                </span>
+                {wordIndex < nameWords.length - 1 ? ' ' : null}
               </span>
             ))}
           </h1>
@@ -63,25 +72,25 @@ export default function Hero() {
 
         <div className="text-center">
           <p
-            className={`font-body text-[18px] text-[rgba(26,26,26,0.7)] leading-[1.6] max-w-[560px] mx-auto mb-8 transition-all duration-600 ${
+            className={`font-body text-[16px] md:text-[18px] text-[rgba(26,26,26,0.7)] leading-[1.6] max-w-[640px] mx-auto mb-8 transition-all duration-600 ${
               contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
             }`}
             style={{ transitionDelay: '200ms' }}
           >
-            Smart Manufacturing undergrad at IIITDM Jabalpur. Building ML systems for materials, language, and production.
+            Fourth-year undergraduate researching physics-informed inverse design, trustworthy distributed learning, and generative models for materials.
           </p>
 
           <div
-            className={`flex items-center justify-center gap-4 mb-6 transition-all duration-600 ${
+            className={`flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 mb-6 transition-all duration-600 ${
               contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
             }`}
             style={{ transitionDelay: '400ms' }}
           >
             <button
-              onClick={() => handleScrollTo('#projects')}
-              className="bg-[#1A1A1A] text-[#F5F5F0] px-7 py-3 font-body font-medium text-[14px] hover:bg-[#6B7B3E] transition-colors duration-200 flex items-center gap-2"
+              onClick={() => handleScrollTo('#research')}
+              className="bg-[#1A1A1A] text-[#F5F5F0] px-7 py-3 font-body font-medium text-[14px] hover:bg-[#6B7B3E] transition-colors duration-200 flex items-center justify-center gap-2"
             >
-              View Projects
+              Explore Research
               <ArrowRight size={16} />
             </button>
             <a
