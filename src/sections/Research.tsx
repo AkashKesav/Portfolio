@@ -7,10 +7,10 @@ const research = [
     tags: ['Inverse Design', 'Physics-Informed ML', 'PINNs', 'Metamaterials'],
   },
   {
-    title: 'Trust-Minimized Distributed Training on Untrusted Networks',
+    title: 'Trust-Minimized Hybrid Distributed Training on Untrusted Networks',
     date: 'Feb 2026 – Present',
-    subtitle: 'Advanced manuscript draft · Equal-contributing author',
-    body: 'Co-designed a hybrid data/model-parallel framework with robust update filtering, softmax-weighted aggregation, trust-aware validator selection, commit–reveal, authenticated key exchange, and smart-contract coordination. In the evaluated testbench, the Krum-score filter achieved TPR 1.0/FPR 0.0 under Gaussian and Byzantine-majority attacks at f = 2/8.',
+    subtitle: 'Under review at Machine Learning (Springer) · Equal-contributing author',
+    body: 'Co-designed a hybrid data/model-parallel framework with robust update filtering, softmax-weighted aggregation, trust-aware validator selection, commit–reveal, authenticated key exchange, and smart-contract coordination (with A. Saksena, A. Malpani, and A. S. Parihar). In three-seed ResNet-50/CIFAR-10 experiments on A100 GPUs, clean pipelines matched the single-GPU baseline within 0.23 pp; trust-weighted VRF selection cut validator-selection Gini from 0.875 to 0.113.',
     tags: ['Distributed ML', 'Robust Aggregation', 'ResNet-50', 'Trust Systems'],
   },
   {
