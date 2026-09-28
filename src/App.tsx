@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Lenis from 'lenis';
+import { Analytics } from '@vercel/analytics/react';
 import Navigation from '@/sections/Navigation';
 import Hero from '@/sections/Hero';
 import Summary from '@/sections/Summary';
@@ -49,6 +50,7 @@ export default function App() {
         <Leadership />
         <Contact />
       </main>
+      <Analytics />
     </div>
   );
 }
