@@ -94,7 +94,7 @@ export default function Hero() {
               <ArrowRight size={16} />
             </button>
             <a
-              href="/AkashKesav_ML.pdf"
+              href="/Akash_Kesav_resume.pdf"
               className="border-[1.5px] border-[#1A1A1A] text-[#1A1A1A] px-7 py-3 font-body font-medium text-[14px] hover:bg-[#1A1A1A] hover:text-[#F5F5F0] transition-all duration-200"
             >
               Download Resume
