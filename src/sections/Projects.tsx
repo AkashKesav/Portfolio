@@ -20,15 +20,16 @@ const projects: Project[] = [
   {
     title: 'Scan-to-CAD Geometric Reasoning for Adaptive Repair (Patent 202621101529)',
     date: '2026',
-    body: 'Reconstructs as-found 3D geometry from optical/laser scans, aligns it to nominal CAD, and computes volumetric deficit and repair envelope for worn components. Processed occupancy/voxel-grid geometry with NumPy/SciPy to detect incomplete deposition, and generated ordered weld-pass toolpaths under bead-overlap and edge-taper rules.',
+    body: 'Reconstructs as-found 3D geometry from optical/laser scans, aligns it to nominal CAD, and computes volumetric deficit and repair envelope for worn components. Processed occupancy/voxel-grid geometry with NumPy/SciPy to detect incomplete deposition, and generated ordered weld-pass toolpaths under bead-overlap and edge-taper rules. Published Indian patent application IN202621101529 A1 (09 Oct 2026).',
     tags: ['CAD', '3D Scanning', 'NumPy/SciPy', 'Manufacturing'],
+    links: [{ label: 'Edge-rebuilding patent (PDF)', url: '/patents/IN202621101529-edge-rebuilding.pdf' }],
   },
   {
     title: 'Portable NDT Gold Purity Estimation Device (Patent 202621115061)',
     date: '2026',
     body: 'Fused electrochemical time-series and Archimedes density signals in a handheld device; on-device ML classifies 24K/22K/18K/silver with confidence scoring. Built the acquisition-to-decision pipeline (load cell/HX711), assembled and tested the hardware, and flagged cross-modal disagreement for review. Published Indian patent application IN202621115061 A1 (06 Nov 2026).',
     tags: ['NDT', 'On-device ML', 'Instrumentation', 'Signal Processing'],
-    links: [{ label: 'Patent application (PDF)', url: '/patents/IN202621115061-gold-purity.pdf' }],
+    links: [{ label: 'Gold-purity patent (PDF)', url: '/patents/IN202621115061-gold-purity.pdf' }],
   },
   {
     title: 'Knowledge Graph Memory System with Autonomous Reflection',
