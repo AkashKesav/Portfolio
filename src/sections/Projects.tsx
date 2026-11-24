@@ -13,7 +13,7 @@ const projects: Project[] = [
   {
     title: 'Unified JEPA for Metasurface Inverse Design',
     date: 'Aug 2026 – Present',
-    body: 'Built a PyTorch JEPA over a unified occupancy–parameter–spectrum representation for one-shot inverse design of 64×64 metasurface unit cells from 301-point spectra; one forward pass replaces 500–1000 diffusion steps at 3.3× fewer trainable parameters (11.4M vs 37.2M). Designed the evaluation protocol — real/null/shuffled tri-controls, paired per-sample win rate with 95% CIs, hard-stratum breakdowns — and beat MetaDiT-S on 17,489 held-out designs: MAE 0.0673 vs 0.0801, AAE 40.5 vs 48.2; backed by a 300-test pytest suite.',
+    body: 'Built a PyTorch JEPA over a unified occupancy–parameter–spectrum representation for one-shot inverse design of 64×64 metasurface unit cells from 301-point spectra; one forward pass replaces 500–1000 diffusion steps at 2.9× fewer trainable parameters (11.4M vs 32.6M). Designed the evaluation protocol — real/null/shuffled tri-controls, paired per-sample win rate with 95% CIs, hard-stratum breakdowns — and evaluated 3 seeds on 17,489 held-out designs: MAE 0.0490 ± 0.0013 vs 0.0803 and AAE 29.51 ± 0.74 vs 48.34 for MetaDiT-S; win rates 99.7 / 97.7 / 93.0% in pure-inverse, partial, and retrofit regimes.',
     tags: ['PyTorch', 'JEPA', 'Metasurfaces', 'Evaluation'],
     link: 'https://github.com/tegga8/metasurface-jepa',
   },
