@@ -26,8 +26,9 @@ const projects: Project[] = [
   {
     title: 'Portable NDT Gold Purity Estimation Device (Patent 202621115061)',
     date: '2026',
-    body: 'Fused electrochemical time-series and Archimedes density signals in a handheld device; on-device ML classifies 24K/22K/18K/silver with confidence scoring. Built the acquisition-to-decision pipeline (load cell/HX711), assembled and tested the hardware, and flagged cross-modal disagreement for review.',
+    body: 'Fused electrochemical time-series and Archimedes density signals in a handheld device; on-device ML classifies 24K/22K/18K/silver with confidence scoring. Built the acquisition-to-decision pipeline (load cell/HX711), assembled and tested the hardware, and flagged cross-modal disagreement for review. Published Indian patent application IN202621115061 A1 (06 Nov 2026).',
     tags: ['NDT', 'On-device ML', 'Instrumentation', 'Signal Processing'],
+    links: [{ label: 'Patent application (PDF)', url: '/patents/IN202621115061-gold-purity.pdf' }],
   },
   {
     title: 'Knowledge Graph Memory System with Autonomous Reflection',
