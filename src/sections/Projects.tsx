@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 type Project = {
   title: string;
@@ -67,15 +67,6 @@ export default function Projects() {
                 <h3 className="font-heading font-bold text-[18px] md:text-[20px] text-[#1A1A1A]">
                   {project.title}
                 </h3>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[rgba(26,26,26,0.4)] hover:text-[#1A1A1A] transition-colors duration-200 shrink-0 ml-3"
-                  aria-label={`Open ${project.linkLabel}: ${project.title}`}
-                >
-                  <ExternalLink size={16} />
-                </a>
               </div>
 
               <p className="font-body text-[12px] text-[rgba(26,26,26,0.5)] mb-3">
