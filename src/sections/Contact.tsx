@@ -16,7 +16,7 @@ export default function Contact() {
           className="font-body text-[16px] text-[rgba(245,245,240,0.7)] max-w-[480px] mx-auto mb-10"
           style={{ transitionDelay: '100ms' }}
         >
-          I&apos;m open to research internships and collaborations in applied ML, trustworthy AI, agentic systems, and AI for science.
+          I&apos;m open to research or IT internships from December 2026 and full-time roles from May 2027.
         </p>
 
         <div

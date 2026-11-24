@@ -22,7 +22,7 @@ export default function Summary() {
               className="font-body text-[18px] text-[#1A1A1A] leading-[1.7] mb-8"
               style={{ transitionDelay: '200ms' }}
             >
-              Fourth-year Smart Manufacturing undergraduate at IIITDM Jabalpur focused on applied machine learning for materials science, with experience in distributed ML systems. My current work spans physics-informed inverse design, trust-minimized training, and semiconductor generative modelling. I am seeking laboratory research experience while preparing for PhD study in trustworthy and scientifically useful AI.
+              Final-year B.Tech (Smart Manufacturing Engineering) student at IIITDM Jabalpur with hands-on experience in machine learning, deep learning, DFT simulations, and CAD (SolidWorks, Fusion 360). Built PyTorch models and reproducible data pipelines through two years of research projects; co-inventor on two patent applications and co-author of a paper under review. Seeking research or IT internships from December 2026 and full-time roles from May 2027.
             </p>
 
             <div
@@ -32,7 +32,7 @@ export default function Summary() {
             >
               <span className="w-2 h-2 rounded-full bg-[#6B7B3E] animate-pulse-slow" />
               <span className="font-body font-medium text-[13px] text-[#6B7B3E]">
-                Open to research internships and collaborations
+                Open to research or IT internships from December 2026
               </span>
             </div>
           </div>

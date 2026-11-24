@@ -1,43 +1,40 @@
 import { ArrowRight, ExternalLink } from 'lucide-react';
 
-const projects = [
+type Project = {
+  title: string;
+  date: string;
+  body: string;
+  tags: string[];
+  link?: string;
+  links?: { label: string; url: string }[];
+};
+
+const projects: Project[] = [
   {
-    title: 'Reflective Memory Kernel',
-    date: 'Dec 2025 – Feb 2026',
-    body: 'Built a persistent agent-memory layer on Dgraph with activation decay and reinforcement for retrieval. A reflection pipeline synthesizes observations, identifies contradictions, and prioritizes relevant context across multi-step AI workflows.',
-    tags: ['Knowledge Graphs', 'Agentic AI', 'Dgraph', 'Go / Python'],
-    link: 'https://github.com/AkashKesav/Whitepaper',
+    title: 'Unified JEPA for Metasurface Inverse Design',
+    date: 'Aug 2026 – Present',
+    body: 'Built a PyTorch JEPA over a unified occupancy–parameter–spectrum representation for one-shot inverse design of 64×64 metasurface unit cells from 301-point spectra; one forward pass replaces 500–1000 diffusion steps at 3.3× fewer trainable parameters (11.4M vs 37.2M). Designed the evaluation protocol — real/null/shuffled tri-controls, paired per-sample win rate with 95% CIs, hard-stratum breakdowns — and beat MetaDiT-S on 17,489 held-out designs: MAE 0.0673 vs 0.0801, AAE 40.5 vs 48.2; backed by a 300-test pytest suite.',
+    tags: ['PyTorch', 'JEPA', 'Metasurfaces', 'Evaluation'],
+    link: 'https://github.com/tegga8/metasurface-jepa',
   },
   {
-    title: 'Multilingual Classification and Sentence Entailment',
-    date: 'Jul 2024 – Aug 2024',
-    body: 'Fine-tuned BERT and XLM-RoBERTa, achieving 98% accuracy on multilingual detection across 20+ languages. Built a 3-class entailment classifier reaching 78% F1-score; recovered minority-class recall by 12 points using weighted loss.',
-    tags: ['Hugging Face', 'BERT', 'XLM-RoBERTa', 'NLP'],
-    links: [
-      { label: 'Language Detection', url: 'https://github.com/AkashKesav/Language_Detection_Classifier' },
-      { label: 'Sentence Entailment', url: 'https://github.com/AkashKesav/SentenceClassifier' },
-    ],
-  },
-  {
-    title: 'Autonomous DFT Workflow Agent',
+    title: 'Scan-to-CAD Geometric Reasoning for Adaptive Repair (Patent 202621101529)',
     date: '2026',
-    body: 'Built a LangGraph agent for adaptive GPAW/VASP runs and automated band-structure and density-of-states analysis using ASE and spglib.',
-    tags: ['LangGraph', 'DFT', 'ASE', 'Scientific Automation'],
-    link: 'https://github.com/AkashKesav/DFT_AI',
+    body: 'Reconstructs as-found 3D geometry from optical/laser scans, aligns it to nominal CAD, and computes volumetric deficit and repair envelope for worn components. Processed occupancy/voxel-grid geometry with NumPy/SciPy to detect incomplete deposition, and generated ordered weld-pass toolpaths under bead-overlap and edge-taper rules.',
+    tags: ['CAD', '3D Scanning', 'NumPy/SciPy', 'Manufacturing'],
   },
   {
-    title: 'MatterGen Python Module',
-    date: 'Mar 2026',
-    body: 'Published an unofficial Python wrapper for Microsoft\'s MatterGen model, adding APIs for model loading and property-conditioned generation to support candidate-material screening workflows.',
-    tags: ['Python', 'PyPI', 'Generative Models', 'Materials'],
-    link: 'https://github.com/AkashKesav/Mattergen_Module_unofficial',
+    title: 'Portable NDT Gold Purity Estimation Device (Patent 202621115061)',
+    date: '2026',
+    body: 'Fused electrochemical time-series and Archimedes density signals in a handheld device; on-device ML classifies 24K/22K/18K/silver with confidence scoring. Built the acquisition-to-decision pipeline (load cell/HX711), assembled and tested the hardware, and flagged cross-modal disagreement for review.',
+    tags: ['NDT', 'On-device ML', 'Instrumentation', 'Signal Processing'],
   },
   {
-    title: 'Thermoelectric Material Property Prediction',
-    date: 'Jan 2025 – May 2025',
-    body: 'Benchmarked seven ML algorithms on 7,239 thermoelectric materials and found that chemical descriptors outperformed physical descriptors across the evaluated models, informing feature selection for material screening.',
-    tags: ['XGBoost', 'Random Forest', 'PyTorch', 'Feature Engineering'],
-    link: 'https://github.com/AkashKesav/TE_ML',
+    title: 'Knowledge Graph Memory System with Autonomous Reflection',
+    date: 'Dec 2025 – Jan 2026',
+    body: 'Built a persistent agent-memory layer on DGraph with hybrid graph-and-vector retrieval (Qdrant) to store, retrieve, and audit context across multi-step AI workflows. Implemented reflection and reasoning loops; deployed Go and Python services with Docker on Linux for reproducible agent execution.',
+    tags: ['Knowledge Graphs', 'Agentic AI', 'DGraph', 'Go / Python'],
+    link: 'https://github.com/AkashKesav/Whitepaper',
   },
 ];
 

@@ -29,7 +29,7 @@ export default function Education() {
               </span>
             </div>
             <p className="font-body text-[14px] text-[rgba(26,26,26,0.5)]">
-              Expected June 2027
+              Expected May 2027
             </p>
           </div>
         </div>

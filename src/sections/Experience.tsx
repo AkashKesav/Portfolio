@@ -7,8 +7,8 @@ export default function Experience() {
       date: 'Jun 2025 – Nov 2025',
       location: 'Chennai, Tamil Nadu',
       bullets: [
-        'Architected multi-agent AI systems with LangChain and LangGraph for triage, assignment, and status tracking, reducing manual coordination overhead for internal operations teams.',
-        'Integrated a 4-system stack (PostgreSQL, MongoDB, Redis, NATS) for asynchronous stateful execution across internal workflow endpoints; containerized services with Docker for reproducible deployments.',
+        'Architected multi-agent AI systems with LangChain and LangGraph, automating triage, assignment, and status tracking for internal operations; built Python backend services for a node-based workflow editor.',
+        'Integrated a 4-system stack (PostgreSQL, MongoDB, Redis, NATS) for asynchronous stateful execution; containerized services with Docker on Linux for reproducible deployment and debugging.',
       ],
     },
     {
@@ -18,9 +18,8 @@ export default function Experience() {
       date: 'Nov 2023 – Apr 2024',
       location: 'Jabalpur, Madhya Pradesh',
       bullets: [
-        'Benchmarked 5 ML architectures (GNNs, XGBoost, Random Forest, DNNs) on semiconductor band-gap prediction, achieving 83% accuracy.',
-        'Designed an automated data-collection and preprocessing pipeline ingesting 1,600+ material records from the Materials Project API across all 118 elements.',
-        'Contributed to research abstract accepted at Materials Today Conference (Elsevier, 2025).',
+        'Benchmarked GNN, XGBoost, Random Forest, and DNN models for semiconductor band-gap prediction on held-out splits, reaching 83% accuracy and comparing MSE, MAE, and R².',
+        'Built an automated data-collection and preprocessing pipeline ingesting 1,600+ material records from the Materials Project API across all 118 elements, with schema checks and missing-value handling.',
       ],
     },
   ];

@@ -41,7 +41,7 @@ export default function Hero() {
               contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
             }`}
           >
-            Applied Machine Learning Researcher
+            Final-year B.Tech (Smart Manufacturing) Student
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function Hero() {
             }`}
             style={{ transitionDelay: '200ms' }}
           >
-            Fourth-year undergraduate researching physics-informed inverse design, trustworthy distributed learning, and generative models for materials.
+            Hands-on experience in machine learning, deep learning, DFT simulations, and CAD. Built PyTorch models and reproducible data pipelines; co-inventor on two patent applications and co-author of a paper under review.
           </p>
 
           <div

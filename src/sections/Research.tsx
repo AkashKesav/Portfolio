@@ -1,24 +1,10 @@
 const research = [
   {
-    title: 'Physics-Informed Inverse Design of Mechanical Metamaterials',
-    date: 'Aug 2026 – Present',
-    subtitle: 'Co-first-author research · Supervised by Dr. K. Ponappa',
-    body: 'Investigating inverse design under structural-integrity constraints using a Phys-JEPA-inspired latent formulation and PINN baselines. I am developing the methodology and validation plan; methods, data, and preliminary results remain confidential pending supervisor approval.',
-    tags: ['Inverse Design', 'Physics-Informed ML', 'PINNs', 'Metamaterials'],
-  },
-  {
-    title: 'Trust-Minimized Hybrid Distributed Training on Untrusted Networks',
+    title: 'Trust-Minimized Hybrid Distributed Training over Untrusted Networks',
     date: 'Feb 2026 – Present',
-    subtitle: 'Under review at Machine Learning (Springer) · Equal-contributing author',
-    body: 'Co-designed a hybrid data/model-parallel framework with robust update filtering, softmax-weighted aggregation, trust-aware validator selection, commit–reveal, authenticated key exchange, and smart-contract coordination (with A. Saksena, A. Malpani, and A. S. Parihar). In three-seed ResNet-50/CIFAR-10 experiments on A100 GPUs, clean pipelines matched the single-GPU baseline within 0.23 pp; trust-weighted VRF selection cut validator-selection Gini from 0.875 to 0.113.',
-    tags: ['Distributed ML', 'Robust Aggregation', 'ResNet-50', 'Trust Systems'],
-  },
-  {
-    title: 'Semiconductor-Focused MatterGen Fine-Tuning and Evaluation',
-    date: '2026 – Present',
-    subtitle: 'Confidential continuation of semiconductor inverse-design research',
-    body: 'Contributing to MatterGen fine-tuning for semiconductor candidates and building a systematic evaluation harness for reproducible checkpoint comparison and result validation. Technical details and results are withheld while experiments are being finalized.',
-    tags: ['MatterGen', 'Generative Models', 'Semiconductors', 'Evaluation'],
+    subtitle: 'Under review at Computing (Springer) · Equal-contributing author',
+    body: 'Co-designed a hybrid data/model-parallel framework with one-shot Krum filtering, softmax-weighted aggregation, and commit–reveal validation. Ran 3-seed benchmarks on A100 GPUs across data-parallel and pipeline configurations, including Byzantine-fault scenarios; clean pipelines matched the single-GPU baseline within 0.23 pp.',
+    tags: ['Distributed ML', 'Robust Aggregation', 'A100', 'Trust Systems'],
   },
 ];
 
